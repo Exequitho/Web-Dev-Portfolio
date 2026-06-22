@@ -62,7 +62,7 @@ Karena proyek ini berjalan di sisi *client-side* murni, tidak diperlukan instala
 
 1.  **Clone repositori ini:**
     ```bash
-    git clone [https://github.com/username-lo/Web-Dev-Portfolio.git](https://github.com/username-lo/Web-Dev-Portfolio.git)
+    git clone [https://github.com/exequitho/Web-Dev-Portfolio.git](https://github.com/exequitho/Web-Dev-Portfolio.git)
     ```
 2.  Buka folder proyek yang baru saja diunduh.
 3.  Klik ganda pada file `index.html` untuk membukanya langsung di *browser* pilihan Anda (Chrome/Firefox/Edge direkomendasikan).
