@@ -654,14 +654,7 @@
           >
             Tutup
           </button>
-          <button
-            onclick="
-              alertCustom(
-                'Demonstrasi live (File terpisah di portofolio sebelumnya) siap dijalankan.',
-              )
-            "
-            class="bg-brand-cyan hover:bg-cyan-500 text-dark-900 px-5 py-2 rounded-lg text-sm font-bold transition-colors shadow-lg"
-          >
+          <button id="btn-buka-aplikasi" class="bg-brand-cyan hover:bg-cyan-500 text-dark-900 px-5 py-2 rounded-lg text-sm font-bold transition-colors shadow-lg">
             <i class="fa-solid fa-play mr-1"></i> Buka Aplikasi
           </button>
         </div>
@@ -793,6 +786,7 @@
       const projectsData = {
         seatreserve: {
           title: "SeatReserve Pro",
+          link: "./project4/index.html", // Arahkan ke project 4
           icon: "fa-couch",
           iconColor: "text-brand-purple",
           tags: [
@@ -806,6 +800,7 @@
         },
         promanage: {
           title: "Pro-Manage Dashboard",
+          link: "./project3/index.html", // Arahkan ke project 3
           icon: "fa-chart-pie",
           iconColor: "text-brand-blue",
           tags: [
@@ -818,6 +813,7 @@
         },
         aruskas: {
           title: "Sistem ArusKas",
+          link: "./project2/index.html", // Arahkan ke project 2
           icon: "fa-wallet",
           iconColor: "text-emerald-500",
           tags: [
@@ -830,6 +826,7 @@
         },
         inventaris: {
           title: "Sistem Inventaris Core",
+          link: "./project1/index.html", // Arahkan ke project 1
           icon: "fa-boxes-stacked",
           iconColor: "text-brand-cyan",
           tags: [
@@ -866,7 +863,11 @@
               `<span class="bg-dark-700 border border-dark-border px-3 py-1 rounded-md text-xs text-gray-300">${tag}</span>`,
           )
           .join("");
-
+        // Set link tombol Buka Aplikasi agar membuka tab baru
+          const btnBuka = document.getElementById('btn-buka-aplikasi');
+          btnBuka.onclick = function() {
+              window.open(data.link, '_blank');
+          };
         // Show Modal with animation
         modal.classList.remove("hidden");
         modal.classList.add("flex");
